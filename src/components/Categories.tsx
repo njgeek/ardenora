@@ -53,7 +53,7 @@ export function Categories() {
           {categories.map((cat) => (
             <Link
               key={cat.name}
-              href="/inventory"
+              href="/portal"
               className={`group relative p-6 md:p-8 rounded-2xl bg-gradient-to-br ${cat.gradient} text-center hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border border-transparent hover:border-border overflow-hidden`}
             >
               <div className="text-4xl mb-4">{cat.emoji}</div>

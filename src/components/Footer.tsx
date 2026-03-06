@@ -37,9 +37,9 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               {[
                 { href: "/", label: "Home" },
-                { href: "/inventory", label: "View Inventory" },
                 { href: "/about", label: "About Us" },
                 { href: "/contact", label: "Become a Buyer" },
+                { href: "/portal", label: "Buyer Portal" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link

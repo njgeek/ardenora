@@ -6,9 +6,9 @@ import { Menu, X, Phone, Mail, Zap } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/inventory", label: "Inventory" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Become a Buyer" },
+  { href: "/portal", label: "Buyer Login" },
 ];
 
 export function Header() {
@@ -80,6 +80,14 @@ export function Header() {
                   key={link.href}
                   href={link.href}
                   className="ml-4 bg-accent text-white px-6 py-2.5 rounded-lg text-sm font-semibold hover:bg-accent-hover transition-all hover:shadow-lg hover:shadow-accent/20 uppercase tracking-wide"
+                >
+                  {link.label}
+                </Link>
+              ) : link.label === "Buyer Login" ? (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="ml-2 border border-primary/20 text-primary px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary hover:text-white transition-all uppercase tracking-wide"
                 >
                   {link.label}
                 </Link>

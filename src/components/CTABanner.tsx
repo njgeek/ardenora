@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Zap } from "lucide-react";
+import { ArrowRight, Zap, Lock } from "lucide-react";
 
 export function CTABanner() {
   return (
@@ -41,10 +41,11 @@ export function CTABanner() {
               />
             </Link>
             <Link
-              href="/inventory"
-              className="glass text-white font-semibold px-8 py-4 rounded-xl hover:bg-white/15 transition-all text-sm uppercase tracking-wide text-center"
+              href="/portal"
+              className="glass text-white font-semibold px-8 py-4 rounded-xl hover:bg-white/15 transition-all text-sm uppercase tracking-wide text-center flex items-center justify-center gap-2"
             >
-              Browse Inventory
+              <Lock size={16} />
+              Buyer Portal Login
             </Link>
           </div>
         </div>
