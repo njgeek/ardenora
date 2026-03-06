@@ -4,9 +4,9 @@ import { CheckCircle, Target, Handshake, BarChart3, Globe } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Ardenora | Premium Wholesale Apparel Supplier",
+  title: "About Ardenora | Wholesale Women's Apparel — Juniors & Missy",
   description:
-    "Learn about Ardenora — a trusted wholesale apparel supplier serving off-price retailers with premium inventory at unbeatable margins.",
+    "Learn about Ardenora — a wholesale women's apparel supplier specializing in juniors and missy for off-price retailers.",
 };
 
 const values = [
@@ -15,7 +15,7 @@ const values = [
   "Flexible minimum orders for growing retailers",
   "Nationwide shipping with tracking on every order",
   "Dedicated account managers for every buyer",
-  "Weekly fresh inventory across all categories",
+  "Weekly fresh juniors & missy inventory drops",
 ];
 
 const clientTypes = [
@@ -36,14 +36,14 @@ export default function AboutPage() {
             Our Story
           </span>
           <h1 className="text-3xl md:text-6xl font-bold text-white mt-4 mb-8 font-[var(--font-display)] leading-tight">
-            Built for{" "}
-            <span className="gradient-text">Off-Price Retail</span>
+            Young Contemporary{" "}
+            <span className="gradient-text">Women&apos;s Wholesale</span>
           </h1>
           <p className="text-gray-300/90 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-            Ardenora was founded with one mission: to be the most reliable
-            wholesale apparel partner for off-price retailers. We bridge the gap
-            between brands with excess inventory and retailers who need quality
-            goods at the right price.
+            Ardenora specializes in wholesale women&apos;s apparel — juniors and
+            missy — for off-price retailers. We bridge the gap between brands
+            with excess inventory and buyers who need on-trend styles at the
+            right price.
           </p>
         </div>
       </section>
@@ -62,21 +62,23 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-5 text-muted leading-relaxed">
               <p>
-                We started in the apparel wholesale industry with a simple
+                We started in women&apos;s apparel wholesale with a simple
                 observation: too many retailers struggle to find consistent,
-                quality inventory at prices that work for the off-price model.
+                on-trend juniors and missy inventory at prices that work for
+                the off-price model.
               </p>
               <p>
-                Ardenora solves that problem. We source directly from brands,
+                Ardenora solves that problem. We specialize in young
+                contemporary women&apos;s fashion — sourcing directly from brands,
                 manufacturers, and licensed distributors to offer deep discounts
-                on current and past-season apparel — the kind of merchandise
-                that flies off shelves in stores like TJ Maxx, Marshalls, Ross,
-                and Burlington.
+                on current and past-season styles. The kind of merchandise
+                that flies off shelves at TJ Maxx, Marshalls, Ross, and
+                Burlington.
               </p>
               <p>
-                Whether you run a single discount store or manage buying for a
-                regional chain, we have the inventory depth and pricing to help
-                you compete and win.
+                Whether you&apos;re buying women&apos;s apparel for a single discount
+                store or managing purchasing for a regional chain, we have the
+                juniors and missy depth to help you compete.
               </p>
             </div>
           </div>

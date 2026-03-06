@@ -6,18 +6,18 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "Ardenora has been our go-to supplier for two years. Consistent quality, great pricing, and they always deliver on time. Our sell-through rate improved 35% after switching.",
+      "Ardenora has been our go-to for women's apparel. Their juniors and missy selection is always on-trend, pricing is unbeatable, and sell-through improved 35% after switching.",
     name: "Sarah Mitchell",
-    role: "VP of Buying, Regional Off-Price Chain",
+    role: "VP of Women's Buying, Regional Off-Price Chain",
     initials: "SM",
     rating: 5,
   },
   {
     quote:
-      "The variety is unmatched. Every week there's fresh inventory that our customers love. Our margins have never been better — we're talking 60%+ on most lots.",
-    name: "David Kim",
-    role: "Owner, 12-Location Discount Retail Group",
-    initials: "DK",
+      "The juniors variety is unmatched. Every week there's fresh women's styles our customers love. Our margins have never been better — 60%+ on most lots.",
+    name: "Lisa Chen",
+    role: "Owner, 12-Location Women's Discount Chain",
+    initials: "LC",
     rating: 5,
   },
   {

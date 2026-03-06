@@ -33,14 +33,14 @@ export default function Home() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-[1.1] mb-8 animate-fade-up animation-delay-200 font-[var(--font-display)]">
-              Premium Apparel at{" "}
+              Women&apos;s Apparel at{" "}
               <span className="gradient-text">Off-Price Wholesale</span>
             </h1>
 
             <p className="text-lg md:text-xl text-gray-300/90 mb-12 leading-relaxed max-w-2xl animate-fade-up animation-delay-400">
-              Ardenora supplies off-price retailers with quality branded and
-              unbranded apparel — at margins that move product. Trusted by
-              discount chains, liquidators, and independent retailers nationwide.
+              Ardenora specializes in young contemporary, juniors &amp; missy
+              wholesale apparel — at margins that move product. Trusted by TJ Maxx
+              buyers, discount chains, and off-price retailers nationwide.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-16 animate-fade-up animation-delay-600">

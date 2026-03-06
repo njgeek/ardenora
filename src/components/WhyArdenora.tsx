@@ -15,7 +15,7 @@ const benefits = [
     icon: TrendingDown,
     title: "Below-Market Pricing",
     description:
-      "Branded and unbranded apparel at 40-70% below wholesale. Margins that make your business thrive.",
+      "Women's apparel at 40-70% below wholesale. Juniors & missy at margins that make your business thrive.",
     highlight: "40-70% savings",
   },
   {
@@ -43,7 +43,7 @@ const benefits = [
     icon: RefreshCw,
     title: "Fresh Inventory Weekly",
     description:
-      "New lots drop every week across all categories. Keep your floors fresh and customers coming back.",
+      "New juniors & missy lots drop every week. On-trend styles that keep your floors fresh and customers coming back.",
     highlight: "Weekly drops",
   },
   {
@@ -85,8 +85,8 @@ export function WhyArdenora() {
             Why Retailers Choose Ardenora
           </h2>
           <p className="text-muted max-w-2xl mx-auto text-lg">
-            We understand what off-price retailers need — deep discounts,
-            reliable supply, and fast turnaround.
+            We understand what off-price women&apos;s apparel buyers need — deep
+            discounts, on-trend styles, and fast turnaround.
           </p>
         </div>
 

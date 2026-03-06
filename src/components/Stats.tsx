@@ -5,7 +5,7 @@ import { Package, Users, Truck, TrendingDown } from "lucide-react";
 
 const stats = [
   { value: "500+", label: "Retail Partners", icon: Users },
-  { value: "10K+", label: "SKUs Available", icon: Package },
+  { value: "10K+", label: "Women's SKUs", icon: Package },
   { value: "48hr", label: "Shipping Turnaround", icon: Truck },
   { value: "60%", label: "Below MSRP", icon: TrendingDown },
 ];

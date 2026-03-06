@@ -17,9 +17,9 @@ export function Footer() {
               </span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm mb-6">
-              Your trusted wholesale apparel partner. We supply off-price
-              retailers with premium inventory at margins that grow your
-              business. Based in New Jersey, shipping nationwide.
+              Wholesale women&apos;s apparel — young contemporary, juniors &amp;
+              missy. We supply off-price retailers with premium women&apos;s
+              inventory at margins that grow your business.
             </p>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 bg-emerald rounded-full animate-pulse-dot" />

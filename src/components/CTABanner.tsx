@@ -25,7 +25,7 @@ export function CTABanner() {
 
           <p className="text-white/70 mb-10 max-w-xl mx-auto text-lg">
             Join hundreds of retailers who trust Ardenora for premium wholesale
-            apparel at unbeatable prices.
+            women&apos;s apparel at unbeatable prices.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

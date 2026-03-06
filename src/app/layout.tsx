@@ -17,24 +17,25 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Ardenora | Premium Wholesale Apparel for Off-Price Retailers",
+  title: "Ardenora | Wholesale Women's Apparel — Juniors & Missy",
   description:
-    "Ardenora supplies premium branded and unbranded apparel at wholesale prices. Serving TJ Maxx, Marshalls, Ross, Burlington, and independent off-price retailers nationwide.",
+    "Ardenora is a wholesale women's apparel supplier specializing in young contemporary, juniors, and missy. Serving TJ Maxx, Marshalls, Ross, Burlington, and off-price retailers nationwide.",
   keywords: [
-    "wholesale apparel",
+    "wholesale womens apparel",
+    "juniors wholesale clothing",
+    "missy wholesale apparel",
+    "young contemporary wholesale",
     "off-price retail supplier",
-    "bulk clothing wholesale",
     "TJ Maxx vendor",
     "wholesale fashion supplier",
-    "closeout apparel deals",
-    "overstock clothing lots",
+    "womens closeout apparel",
+    "wholesale dresses tops leggings",
     "discount retail inventory",
-    "wholesale clothing distributor",
   ],
   openGraph: {
-    title: "Ardenora | Premium Wholesale Apparel",
+    title: "Ardenora | Wholesale Women's Apparel — Juniors & Missy",
     description:
-      "Premium wholesale apparel at unbeatable prices. Your trusted partner for off-price retail inventory.",
+      "Wholesale women's apparel at off-price margins. Young contemporary, juniors & missy for off-price retailers.",
     url: "https://ardenora.com",
     siteName: "Ardenora",
     type: "website",

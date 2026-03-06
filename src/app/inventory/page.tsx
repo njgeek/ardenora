@@ -30,8 +30,8 @@ export default function InventoryPage() {
             Current Inventory
           </h1>
           <p className="text-gray-300/90 max-w-2xl text-lg">
-            Browse our available lots. All items are in-stock and ready to ship
-            within 48 hours. Hover for video previews.
+            Browse our available juniors &amp; missy lots. All items in-stock
+            and ready to ship within 48 hours. Hover for video previews.
           </p>
         </div>
       </section>

@@ -67,7 +67,7 @@ export function Header() {
                 ARDENORA
               </span>
               <span className="hidden md:block text-[10px] text-muted tracking-[0.3em] uppercase -mt-0.5">
-                Wholesale Apparel
+                Women's Wholesale
               </span>
             </div>
           </Link>

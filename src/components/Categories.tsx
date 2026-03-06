@@ -4,31 +4,31 @@ import Link from "next/link";
 
 const categories = [
   {
-    name: "Women's Apparel",
-    description: "Tops, dresses, activewear & more",
-    count: "3,000+",
+    name: "Juniors",
+    description: "Crop tops, bodycon, graphic tees, shorts",
+    count: "4,000+",
     gradient: "from-pink-500/20 to-rose-500/10",
+    emoji: "✨",
+  },
+  {
+    name: "Missy",
+    description: "Blouses, dresses, pants, sweaters",
+    count: "3,500+",
+    gradient: "from-purple-500/20 to-violet-500/10",
     emoji: "👗",
   },
   {
-    name: "Men's Apparel",
-    description: "T-shirts, polos, pants, outerwear",
-    count: "2,500+",
-    gradient: "from-blue-500/20 to-indigo-500/10",
-    emoji: "👔",
-  },
-  {
-    name: "Kids & Baby",
-    description: "Toddler to teen, all seasons",
+    name: "Activewear",
+    description: "Leggings, sports bras, joggers, sets",
     count: "2,000+",
-    gradient: "from-amber-500/20 to-yellow-500/10",
-    emoji: "🧒",
+    gradient: "from-rose-500/20 to-pink-500/10",
+    emoji: "🏃‍♀️",
   },
   {
     name: "Seasonal Lots",
-    description: "Holiday, summer, back-to-school",
+    description: "Holiday, summer, back-to-school closeouts",
     count: "1,500+",
-    gradient: "from-emerald-500/20 to-teal-500/10",
+    gradient: "from-amber-500/20 to-yellow-500/10",
     emoji: "🏷️",
   },
 ];
@@ -45,7 +45,7 @@ export function Categories() {
             Shop by Category
           </h2>
           <p className="text-muted text-lg">
-            Deep inventory across all major apparel categories
+            Young contemporary, juniors &amp; missy — deep inventory across every category
           </p>
         </div>
 

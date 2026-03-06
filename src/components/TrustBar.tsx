@@ -13,7 +13,7 @@ export function TrustBar() {
   return (
     <section className="bg-white border-b border-border py-8 overflow-hidden">
       <p className="text-center text-xs text-muted uppercase tracking-[0.2em] font-medium mb-6">
-        Trusted by buyers from leading off-price retailers
+        Trusted by women&apos;s apparel buyers from leading off-price retailers
       </p>
       <div className="relative">
         <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-white to-transparent z-10" />
