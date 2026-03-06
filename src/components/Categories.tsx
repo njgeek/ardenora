@@ -1,67 +1,70 @@
+"use client";
+
 import Link from "next/link";
-import { Shirt, Wind, Sun, Snowflake } from "lucide-react";
 
 const categories = [
   {
-    icon: Shirt,
     name: "Women's Apparel",
-    description: "Tops, dresses, activewear, and more",
-    count: "3,000+ SKUs",
+    description: "Tops, dresses, activewear & more",
+    count: "3,000+",
+    gradient: "from-pink-500/20 to-rose-500/10",
+    emoji: "👗",
   },
   {
-    icon: Wind,
     name: "Men's Apparel",
     description: "T-shirts, polos, pants, outerwear",
-    count: "2,500+ SKUs",
+    count: "2,500+",
+    gradient: "from-blue-500/20 to-indigo-500/10",
+    emoji: "👔",
   },
   {
-    icon: Sun,
     name: "Kids & Baby",
     description: "Toddler to teen, all seasons",
-    count: "2,000+ SKUs",
+    count: "2,000+",
+    gradient: "from-amber-500/20 to-yellow-500/10",
+    emoji: "🧒",
   },
   {
-    icon: Snowflake,
     name: "Seasonal Lots",
     description: "Holiday, summer, back-to-school",
-    count: "1,500+ SKUs",
+    count: "1,500+",
+    gradient: "from-emerald-500/20 to-teal-500/10",
+    emoji: "🏷️",
   },
 ];
 
 export function Categories() {
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-24 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+        <div className="text-center mb-16">
+          <span className="text-accent text-xs font-bold uppercase tracking-[0.2em]">
+            Categories
+          </span>
+          <h2 className="text-3xl md:text-5xl font-bold text-primary mt-3 mb-5 font-[var(--font-display)]">
             Shop by Category
           </h2>
-          <p className="text-muted">
+          <p className="text-muted text-lg">
             Deep inventory across all major apparel categories
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           {categories.map((cat) => (
             <Link
               key={cat.name}
               href="/inventory"
-              className="group p-6 rounded-lg border border-border text-center hover:border-accent hover:shadow-lg transition-all duration-300"
+              className={`group relative p-6 md:p-8 rounded-2xl bg-gradient-to-br ${cat.gradient} text-center hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border border-transparent hover:border-border overflow-hidden`}
             >
-              <div className="w-14 h-14 mx-auto bg-primary/5 rounded-full flex items-center justify-center mb-4 group-hover:bg-accent/10 transition-colors">
-                <cat.icon
-                  size={24}
-                  className="text-primary group-hover:text-accent transition-colors"
-                />
-              </div>
-              <h3 className="font-semibold text-primary text-sm mb-1">
+              <div className="text-4xl mb-4">{cat.emoji}</div>
+              <h3 className="font-bold text-primary text-sm md:text-base mb-1">
                 {cat.name}
               </h3>
-              <p className="text-xs text-muted mb-2 hidden md:block">
+              <p className="text-xs text-muted mb-3 hidden md:block">
                 {cat.description}
               </p>
-              <span className="text-xs font-medium text-accent">
-                {cat.count}
+              <span className="inline-flex items-center text-xs font-bold text-accent bg-white/80 px-3 py-1 rounded-full">
+                {cat.count} SKUs
               </span>
             </Link>
           ))}

@@ -4,81 +4,92 @@ import { Phone, Mail, MapPin } from "lucide-react";
 export function Footer() {
   return (
     <footer className="bg-primary text-white">
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="max-w-7xl mx-auto px-4 pt-20 pb-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
-          <div>
-            <h3 className="text-2xl font-bold tracking-tight mb-4">
-              ARDENORA
-            </h3>
-            <p className="text-gray-300 text-sm leading-relaxed">
+          <div className="md:col-span-2">
+            <div className="flex items-center gap-3 mb-5">
+              <div className="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center">
+                <span className="text-gold font-bold text-sm">A</span>
+              </div>
+              <span className="text-xl font-bold tracking-[0.15em]">
+                ARDENORA
+              </span>
+            </div>
+            <p className="text-gray-400 text-sm leading-relaxed max-w-sm mb-6">
               Your trusted wholesale apparel partner. We supply off-price
-              retailers with premium inventory at unbeatable margins.
+              retailers with premium inventory at margins that grow your
+              business. Based in New Jersey, shipping nationwide.
             </p>
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 bg-emerald rounded-full animate-pulse-dot" />
+              <span className="text-xs text-emerald font-medium">
+                Now accepting new buyers
+              </span>
+            </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-gold font-semibold uppercase tracking-wide text-sm mb-4">
-              Quick Links
+            <h4 className="text-gold font-semibold uppercase tracking-[0.15em] text-xs mb-5">
+              Navigation
             </h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  href="/inventory"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  View Inventory
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  Become a Buyer
-                </Link>
-              </li>
+            <ul className="space-y-3 text-sm">
+              {[
+                { href: "/", label: "Home" },
+                { href: "/inventory", label: "View Inventory" },
+                { href: "/about", label: "About Us" },
+                { href: "/contact", label: "Become a Buyer" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="text-gold font-semibold uppercase tracking-wide text-sm mb-4">
+            <h4 className="text-gold font-semibold uppercase tracking-[0.15em] text-xs mb-5">
               Contact
             </h4>
-            <ul className="space-y-3 text-sm">
-              <li className="flex items-center gap-2 text-gray-300">
-                <Phone size={14} className="text-gold" />
-                <a href="tel:+1234567890" className="hover:text-white">
+            <ul className="space-y-4 text-sm">
+              <li className="flex items-center gap-3 text-gray-400">
+                <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center">
+                  <Phone size={14} className="text-gold" />
+                </div>
+                <a href="tel:+1234567890" className="hover:text-white transition-colors">
                   (123) 456-7890
                 </a>
               </li>
-              <li className="flex items-center gap-2 text-gray-300">
-                <Mail size={14} className="text-gold" />
-                <a href="mailto:sales@ardenora.com" className="hover:text-white">
+              <li className="flex items-center gap-3 text-gray-400">
+                <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center">
+                  <Mail size={14} className="text-gold" />
+                </div>
+                <a href="mailto:sales@ardenora.com" className="hover:text-white transition-colors">
                   sales@ardenora.com
                 </a>
               </li>
-              <li className="flex items-start gap-2 text-gray-300">
-                <MapPin size={14} className="text-gold mt-0.5" />
+              <li className="flex items-center gap-3 text-gray-400">
+                <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center">
+                  <MapPin size={14} className="text-gold" />
+                </div>
                 <span>New Jersey, USA</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-12 pt-8 text-center text-xs text-gray-400">
-          &copy; {new Date().getFullYear()} Ardenora. All rights reserved. |
-          Wholesale Only
+        <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+          <span>
+            &copy; {new Date().getFullYear()} Ardenora. All rights reserved.
+          </span>
+          <span className="text-gold/60">Wholesale Only — Minimum Orders Apply</span>
         </div>
       </div>
     </footer>
